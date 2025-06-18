@@ -35,8 +35,7 @@ jobs:
 
     # 🛠️ Build Docker image
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/my-app:latest -f  .
-
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/my-app:latest .
 
     # 🚀 Push Docker image
     - name: Push Docker image
